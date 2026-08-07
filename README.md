@@ -1,7 +1,19 @@
 # StellarClassification
 
-
-## LSTM Model
+## EDA Processing (EDA.py)
+Make sure the `star_classification.csv` file is in the same folder as the `EDA.py` file.
+Run `EDA.py` which analyzes the star_classification.csv data downloaded from the SDSS DR17 Dataset on Kaggle by 
+fedesoriano on Kaggle.
+## KNN Model (knn.ipynb)
+Make sure the `star_classification.csv file` is in the same folder `knn.ipynb`.
+Run `knn.ipynb` which runs the KNN model training process, validation,  final test, and  displays its confusion matrix.
+## Random Forest Model (random_forest.ipynb)
+Make sure the `star_classification.csv` file is in the same folder as `random_rainforest.ipynb`.
+Run `random_forest.ipynb` which runs the random forest training process, validation, testing, ablation study, and the confusion matrices.
+## MLP Model (mlp.ipynb)
+Make sure the `star_classification.csv` file is in the same folder as `mlp.ipynb`.
+Run `mlp.ipynb` which runs the mlp classifier training process, validation, hyperparameter tuning, testing, and displays the final confusion matrix.
+## LSTM Model (lstm.ipynb)
 
 For our recurrent neural network model, we used a Long Short-Term Memory (LSTM) model to classify objects as GALAXY, QSO, or STAR. The model uses the u, g, r, i, and z brightness measurements as a sequence based on wavelength. Redshift is kept as a separate input and is later combined with the LSTM output.
 
